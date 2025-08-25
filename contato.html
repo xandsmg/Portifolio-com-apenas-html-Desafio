@@ -12,8 +12,8 @@
             <nav>
                 <tr>
                     <th><a href="index.html" >HOME</a> | </th>
-                    <th><a href="projetos.html" target="_blank">PROJETOS</a> |</th>
                     <th><a href="sobre.html" target="_blank">SOBRE</a> | </th>
+                    <th><a href="projetos.html" target="_blank">PROJETOS</a> |</th>
                     <th><a href="contato.html" target="_blank">CONTATO</a></th>
                 </tr>
             </nav>
@@ -26,16 +26,20 @@
 
 
         </pre>
-        <main align="center">
+        <main>
+            <!-- Seção de Formulário de Contato -->
             <section>
-                <p>Entrar em Contato:</p>
+                <p>Entrar em Contato</p>
                 <form>
-                    <input type="text" placeholder="nome" maxlength="100"><br><br>
-                    <input type="email" placeholder="email" required minlength="5" maxlength="50"><br><br>
-                    <input type="tel" placeholder="telefone" required minlength="10" maxlength="15"><br><br>
-                    <label for="Assunto: "></label>
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome"><br><br>
+                    <label for="email">Email: </label>
+                    <input type="email" required minlength="5" maxlength="50"><br><br>
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" required minlength="10" maxlength="10"><br><br>
+                    <label>Tipo de contratação: </label>
                     <select>
-                        <option value="">Entrevista</option>
+                        <option value="">Efetivar</option>
                         <option value="">Freelancer</option>
                     </select>
                     <br><br>
@@ -43,6 +47,7 @@
                     <textarea></textarea>
                     <br>
                     <input type="submit" value="Enviar">
+                    <input type="reset" value="Apagar">
                 </form>
             </section>
         </main>
@@ -77,8 +82,8 @@
 
 
         </pre>
-        </main>
-         <footer>
+        <!-- Rodápe -->
+        <footer>
             <table>
                 <tr align="left">
                     <th>Telefone </th>
